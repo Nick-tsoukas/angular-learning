@@ -17,6 +17,11 @@
 </div>
 
 <!-- <p>{{ serverCreationStatus }}</p> -->
-<p *ngIf="serverCreated"> A New Server Has Been Created ... Name : {{ serverName }}</p>
+<p *ngIf="serverCreated; else noServer"> A New Server Has Been Created ... Name : {{ serverName }}</p>
+<!-- Adding Local reference ... else condition for the above if statement -->
+<ng-template #noServer>
+  <p>No Server Was Created ...</p>
+</ng-template>
+
 <app-server></app-server>
 <app-server></app-server>
