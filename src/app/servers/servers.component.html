@@ -1,14 +1,20 @@
-<label>Server Name</label>
-<input type="text" class="form-control" [(ngModel)]="serverName" />
+<div class="container">
+  <div class="row">
+    <label>Server Name</label>
+    <input type="text" class="form-control" [(ngModel)]="serverName" />
+  </div>
 
-<button
-  type="button"
-  class="btn btn-primary"
-  [disabled]="!allowNewServer"
-  (click)="onCreateServer()"
->
-  Add Server
-</button>
+  <div style="margin-top: 1em;" class="row">
+    <button
+      type="button"
+      class="btn btn-primary"
+      [disabled]="!allowNewServer"
+      (click)="onCreateServer()"
+    >
+      Add Server
+    </button>
+  </div>
+</div>
 
 <p>{{ serverCreationStatus }}</p>
 <p>{{ serverName }}</p>
