@@ -17,7 +17,7 @@
 </div>
 
 <!-- <p>{{ serverCreationStatus }}</p> -->
-<p *ngIf="serverCreated; else noServer"> A New Server Has Been Created ... Name : {{ serverName }}</p>
+<p *ngIf="serverCreated; else noServer"> A New Server Has Been Created ... Name : <span [ngStyle]="{color: 'red'}"> {{ serverName }} </span></p>
 
 <app-server></app-server>
 <app-server></app-server>
