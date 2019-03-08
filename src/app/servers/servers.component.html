@@ -16,7 +16,7 @@
   </div>
 </div>
 
-<p>{{ serverCreationStatus }}</p>
-<p>{{ serverName }}</p>
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<p *ngIf="serverCreated"> A New Server Has Been Created ... Name : {{ serverName }}</p>
 <app-server></app-server>
 <app-server></app-server>
