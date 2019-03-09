@@ -1,7 +1,12 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <p [ngStyle]="{color : getColor()}">Server id {{ serverId }} status : {{ getServerStatus() }}</p>
+            <!-- using ngClass directive to dynamically add classes -->
+            <!-- ngStyle can change styling dynamically using a method created in the component -->
+            <p 
+            [ngStyle]="{backgroundColor : getColor()}"
+            [ngClass]="{online: serverStatus === 'online'}"
+            >Server id {{ serverId }} status : {{ getServerStatus() }}</p>
         </div>
     </div>
 </div>

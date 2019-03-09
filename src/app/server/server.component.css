@@ -1,9 +1,3 @@
-.green {
-    height: 500px;
-    background: green;
-}
-
-.red {
-    height: 500px;
-    background: red;
+.online {
+    color: white;
 }
